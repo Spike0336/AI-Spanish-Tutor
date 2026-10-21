@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Brisa",
+      "hasCanvas": false,
+      "bodyTextLen": 303,
+      "bodyTextHash": "957eb6f0ca32bcb9025efefaef22a6d70cff9dd90399e6c22b9278387dc4ffef",
+      "bodyTextPrefix": "SPANISH, OUT LOUD Brisa A tutor who stays in the conversation, t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Brisa",
+      "hasCanvas": false,
+      "bodyTextLen": 100,
+      "bodyTextHash": "3d324a903b87044bf6f377c5b88f961a37b4be745f9a8e98d4bb0657fbcac36a",
+      "bodyTextPrefix": "BRISA What should your tutor call you? Just so the conversation ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
