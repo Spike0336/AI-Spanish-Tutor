@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "@fontsource/fraunces/latin-500.css";
+@import "@fontsource/fraunces/latin-600.css";
+@import "@fontsource/fraunces/latin-600-italic.css";
+@import "@fontsource/outfit/latin-400.css";
+@import "@fontsource/outfit/latin-500.css";
+@import "@fontsource/outfit/latin-600.css";
+
+@theme {
+  --color-paper: #f3eee4;
+  --color-ink: #221c17;
+  --color-sand: #e4d9c8;
+  --color-clay: #8e3520;
+  --color-olive: #2f5d45;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-clay);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--color-clay) 28%, var(--color-paper));
+    color: var(--color-ink);
+  }
+}
+
+.dock {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.rise {
+  animation: rise 200ms ease-out;
+}
+
+.pulse-ring {
+  animation: pulse 1.4s ease-out infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .pulse-ring {
+    animation: none;
+  }
+}
